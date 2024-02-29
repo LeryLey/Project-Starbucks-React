@@ -1,6 +1,8 @@
+import GroupHomeCoffee from "../Menu/MenuHomeCoffee";
 import MenuList from "../components/MenuList";
-import GroupDrinks from "../DrinksGroup/GroupDrinks";
-import GroupFood from "../FoodGroup/GroupFood";
+import GroupDrinks from "../Menu/MenuDrinks";
+import GroupFood from "../Menu/MenuFood";
+import MenuMerchandise from "../Menu/MenuMerchandise";
 const MenuPage = () => {
   return (
     <div>
@@ -138,17 +140,28 @@ const MenuPage = () => {
             <h1 className="text-3xl font-bold">Menu</h1>
             {/* menu drink  */}
             <div className="mt-10">
-              <h2 className="text-2xl font-bold">Drinks</h2>
+              <h2 className="text-2xl font-bold mb-5">Drinks</h2>
               <hr />
               <GroupDrinks />
             </div>
             {/* menu Food Food */}
             <div className="mt-10">
-              <h2 className="text-2xl font-bold">Food</h2>
+              <h2 className="text-2xl font-bold mb-5">Food</h2>
               <hr />
               <GroupFood />
             </div>
-            <div></div>
+            {/* Menu at home coffee  */}
+            <div className="mt-10">
+              <h2 className="text-2xl font-bold mb-5">At Home Coffee</h2>
+              <hr />
+              <GroupHomeCoffee />
+            </div>
+            {/* Menu  MenuMerchandise */}
+            <div className="mt-10">
+              <h2 className="text-2xl font-bold mb-5">Merchandise</h2>
+              <hr />
+              <MenuMerchandise />
+            </div>
           </div>
         </aside>
       </div>

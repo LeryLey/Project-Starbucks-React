@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Star from "../assets/Starbucks-Rewards-1024x471.png";
 import Coffee from "../assets/025.webp";
+import GroupExtras from "../components/GroupExtras";
 const Rewards = () => {
   return (
     <div>
@@ -9,14 +10,14 @@ const Rewards = () => {
           <h1>STARBUCKS® REWARDS</h1>
         </div>
       </div>
-      <div className="bg-blue-50 relative lg:h-screen md:h-96 h-[70vh] flex items-center md:flex-row flex-col">
-        <div className="absolute sm:-right-40 right-0 lg:h-full md:h-96 bottom-0">
+      <div className="bg-blue-50 relative  md:h-screen h-screen flex items-center md:flex-row flex-col">
+        <div className="absolute right-0 overflow-x-hidden lg:h-full md:h-96 bottom-0">
           <img
             src={Star}
-            className="w-full flex md:h-full sm:h-96 h-52 duration-500 bottom-0 "
+            className="w-full flex md:h-full h-52 duration-500 bottom-0 "
           />
         </div>
-        <div className="px-10 md:pt-0 pt-10 space-y-5  md:text-start text-center">
+        <div className="px-10 md:pt-0 pt-10 space-y-5  md:text-start text-center z-[1]">
           <h2 className="text-4xl font-medium ">
             FREE COFFEE <br /> IS A TAP AWAY
           </h2>
@@ -196,6 +197,17 @@ const Rewards = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="text-center py-20">
+        <h2 className="text-3xl font-medium">Endless Extras</h2>
+        <div className="mt-8 mb-12 flex justify-center">
+          <p className="w-[50%] font-medium">
+            Joining Starbucks® Rewards means unlocking access to exclusive
+            benefits. Say hello to easy ordering, tasty Rewards and—yes, free
+            coffee.
+          </p>
+        </div>
+        <GroupExtras />
       </div>
     </div>
   );
