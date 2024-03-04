@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-function Navbar() {
+let Navbar = () => {
   let Style = {
     btnStyleOne:
       "bg-transparent text-black py-1 px-5 rounded-full border-[1px] border-[#006241] duration-500 hover:text-white hover:bg-[#006241]",
@@ -130,6 +130,6 @@ function Navbar() {
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;

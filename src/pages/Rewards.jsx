@@ -2,6 +2,10 @@ import { Link } from "react-router-dom";
 import Star from "../assets/Starbucks-Rewards-1024x471.png";
 import Coffee from "../assets/025.webp";
 import GroupExtras from "../components/GroupExtras";
+import Scan from "../assets/scan-and-pay.png";
+import Save from "../assets/save-in-app.png";
+import Register from "../assets/register.png";
+import Preload from "../assets/preload.png";
 const Rewards = () => {
   return (
     <div>
@@ -208,6 +212,58 @@ const Rewards = () => {
           </p>
         </div>
         <GroupExtras />
+      </div>
+      {/* payment */}
+      <div className="flex justify-center items-center bg-gray-100 px-10">
+        <div className="w-full">
+          <div className="mt-10 mb-20 w-full justify-center flex flex-col items-center">
+            <h2 className="text-center text-3xl font-medium">
+              Cash or card, you earn Stars
+            </h2>
+            <p className="mt-4 w-[80%] text-center">
+              No matter how you pay, you can earn Stars with your morning
+              coffee. Those Stars add up to (really delicious) Rewards.
+            </p>
+          </div>
+          <div className="flex my-10 space-x-10">
+            <div className="flex lg:flex-row flex-col">
+              <div className="mr-20 lg:mb-0 mb-10 w-96">
+                <h2 className="text-2xl font-medium">1★Star per dollar</h2>
+                <div>
+                  <span className="text-xl">Pay as you go</span>
+                </div>
+              </div>
+              <div className="grid md:grid-cols-2 grid-cols-1">
+                <div className="flex space-x-7">
+                  <img src={Scan} className="w-32" />
+                  <div>
+                    <h2 className="text-2xl font-medium">
+                      Scan and pay separately
+                    </h2>
+                    <p className="w-80 mt-3">
+                      Use cash or credit/debit card at the <br /> register.
+                    </p>
+                  </div>
+                </div>
+                <div className="flex">
+                  <div className="flex space-x-7">
+                    <img src={Save} className="w-32" />
+                    <div>
+                      <h2 className="text-2xl font-medium">
+                        Save payment in the app
+                      </h2>
+                      <p className="md:w-80 mt-3">
+                        Check-out faster by saving a credit/debit card or PayPal
+                        to your account. You’ll be able to order ahead or scan
+                        and pay at the register in one step.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
